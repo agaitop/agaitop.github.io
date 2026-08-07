@@ -5,41 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Портфолио геймплей программиста Агая. C++, C#, Unreal Engine 5. Разработка зомби-шутера и десктопных приложений.">
     <title>АГАЙ | Геймплей Программист</title>
-    
+   
     <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- ИКОНКИ САЙТА -->
+   
+    <!-- Иконки -->
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png"> <!-- Для iOS устройств -->
-    
+    <link rel="apple-touch-icon" href="favicon.png">
+   
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+
     <!-- Декоративный фон -->
-    <div class="hud-bg"></div>
+    <div class="hud-bg" id="parallax-bg"></div>
+
 
     <!-- Навигация -->
     <nav class="site-nav">
         <div class="container nav-inner">
             <a href="#about" class="logo tech-font">&lt;АГАЙ /&gt;</a>
             <ul class="nav-links">
-                <li><a href="#about" class="nav-pill">[ БИО ]</a></li>
-                <li><a href="#skills" class="nav-pill">[ СТЕК ]</a></li>
-                <li><a href="#education" class="nav-pill">[ ОБУЧЕНИЕ ]</a></li>
-                <li><a href="#projects" class="nav-pill">[ ПРОЕКТЫ ]</a></li>
-                <li><a href="#contacts" class="nav-pill">[ КОНТАКТЫ ]</a></li>
+                <li><a href="#about" class="nav-pill magnetic-btn">[ БИО ]</a></li>
+                <li><a href="#skills" class="nav-pill magnetic-btn">[ СТЕК ]</a></li>
+                <li><a href="#education" class="nav-pill magnetic-btn">[ ОБУЧЕНИЕ ]</a></li>
+                <li><a href="#projects" class="nav-pill magnetic-btn">[ ПРОЕКТЫ ]</a></li>
+                <li><a href="#contacts" class="nav-pill magnetic-btn">[ КОНТАКТЫ ]</a></li>
             </ul>
         </div>
     </nav>
 
+
     <!-- Секция: Терминал Био -->
-    <section id="about" class="section terminal-section">
+    <section id="about" class="section terminal-section fade-in-section">
         <div class="container">
-            <div class="terminal-window scroll-reveal">
+            <div class="terminal-window glow-terminal">
                 <div class="terminal-header">
                     <span class="dot red"></span>
                     <span class="dot yellow"></span>
@@ -48,14 +51,14 @@
                 </div>
                 <div class="terminal-body tech-font">
                     <p class="prompt"><span class="user">agai@dev</span>:<span class="path">~</span>$ whoami</p>
-                    
+                   
                     <p class="output">
                         <span style="color: var(--orange); font-weight: bold;">Статус:</span> Активное обучение и накопление практики.<br>
                         В данный момент фокусируюсь на углублении знаний C# и не только и разработке pet-проектов.<br>
                         К коммерческим заказам планирую приступить после завершения текущих учебных этапов.<br>
                         Следите за обновлениями портфолио!
                     </p>
-                    
+                   
                     <p class="prompt"><span class="user">agai@dev</span>:<span class="path">~</span>$ skills --list</p>
                     <div class="skills-grid">
                         <span class="skill-tag">[x] C++ (7 мес)</span>
@@ -65,22 +68,23 @@
                         <span class="skill-tag active">[>] Зомби Шутер (UE5)</span>
                     </div>
 
+
                     <p class="prompt"><span class="user">agai@dev</span>:<span class="path">~</span>$ cat philosophy.txt</p>
                     <p class="output quote">"Сначала архитектура, потом код. Люблю разбираться, почему что-то не работает."</p>
-                    
+                   
                     <p class="prompt blinking-cursor"><span class="user">agai@dev</span>:<span class="path">~</span>$ _</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- СЕКЦИЯ: ВИЗУАЛИЗАЦИЯ НАВЫКОВ -->
-    <section id="skills" class="section skills-section">
+
+    <!-- Секция: Визуализация навыков -->
+    <section id="skills" class="section skills-section fade-in-section">
         <div class="container">
             <h2 class="section-title tech-font">02. ТЕХНИЧЕСКИЙ СТЕК</h2>
-            <div class="skills-container scroll-reveal">
-                
-                <!-- C++ -->
+            <div class="skills-container">
+               
                 <div class="skill-row">
                     <div class="skill-info">
                         <span class="skill-name tech-font">C++</span>
@@ -92,7 +96,7 @@
                     <p class="skill-desc">Начальный язык который изучал</p>
                 </div>
 
-                <!-- C# -->
+
                 <div class="skill-row">
                     <div class="skill-info">
                         <span class="skill-name tech-font">C#</span>
@@ -104,7 +108,7 @@
                     <p class="skill-desc">Активное изучение.</p>
                 </div>
 
-                <!-- Unreal Engine 5 -->
+
                 <div class="skill-row">
                     <div class="skill-info">
                         <span class="skill-name tech-font">Unreal Engine 5</span>
@@ -116,16 +120,18 @@
                     <p class="skill-desc">Разработка зомби-шутера. Игра в процессе.</p>
                 </div>
 
+
             </div>
         </div>
     </section>
 
+
     <!-- Секция: Обучение -->
-    <section id="education" class="section education-section">
+    <section id="education" class="section education-section fade-in-section">
         <div class="container">
             <h2 class="section-title tech-font">03. СИСТЕМНОЕ ОБРАЗОВАНИЕ</h2>
-            
-            <div class="edu-card scroll-reveal">
+           
+            <div class="edu-card">
                 <div class="edu-icon">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                 </div>
@@ -139,43 +145,46 @@
         </div>
     </section>
 
+
     <!-- Секция: Проекты -->
-    <section id="projects" class="section projects-section">
+    <section id="projects" class="section projects-section fade-in-section">
         <div class="container">
             <h2 class="section-title tech-font">04. ИЗБРАННЫЕ ПРОЕКТЫ</h2>
-            
+           
             <div class="projects-grid">
-                <!-- Проект 1 -->
-                <article class="project-card scroll-reveal">
+                <!-- Проект 1: Зомби Шутер -->
+                <article class="project-card">
                     <div class="hud-corner top-left"></div>
                     <div class="hud-corner bottom-right"></div>
-                    
-                    <div class="card-media">
-                        <div class="placeholder-tech">ZOMBIE SHOOTER [GIF]</div>
+                   
+                    <div class="card-media project-cover">
+                        <img src="zombie-cover.png" alt="Обложка игры Zombie Shooter" loading="lazy">
                     </div>
-                    
+                   
                     <div class="card-content">
                         <div class="card-tags tech-font">
                             <span>UE5</span><span>C++</span><span>AI</span>
                         </div>
                         <h3>Прототип Зомби Шутера</h3>
-                        <p>Создание игры на Unreal Engine 5.</p>
+                        <p>Создание игры Зомби Шутера.</p>
                         <div class="card-actions">
                             <span class="status-badge tech-font">В РАЗРАБОТКЕ</span>
-                            <a href="#" class="btn-orange">ПОДРОБНЕЕ -></a>
+                            <a href="#" class="btn-orange magnetic-btn">ПОДРОБНЕЕ -></a>
                         </div>
                     </div>
                 </article>
 
-                <!-- Проект 2 -->
-                <article class="project-card scroll-reveal">
+
+                <!-- Проект 2: Система заказов (ДОБАВЛЕНА КАРТИНКА btn-order.png) -->
+                <article class="project-card">
                     <div class="hud-corner top-left"></div>
                     <div class="hud-corner bottom-right"></div>
-                    
-                    <div class="card-media">
-                        <div class="placeholder-tech">ORDER SYSTEM [CODE]</div>
+                   
+                    <div class="card-media project-cover">
+                        <!-- Теперь здесь картинка кнопки заказа -->
+                        <img src="btn-order.png" alt="Система обработки заказов" loading="lazy">
                     </div>
-                    
+                   
                     <div class="card-content">
                         <div class="card-tags tech-font">
                             <span>C#</span><span>.NET</span><span>OOP</span>
@@ -184,7 +193,7 @@
                         <p>Заказы пока в обработке.</p>
                         <div class="card-actions">
                             <span class="status-badge tech-font" style="color: var(--orange);">[ В ПРОЦЕССЕ ]</span>
-                            <a href="#" class="btn-orange">ЗАКАЗАТЬ-></a>
+                            <a href="#" class="btn-orange magnetic-btn">ЗАКАЗАТЬ -></a>
                         </div>
                     </div>
                 </article>
@@ -192,17 +201,17 @@
         </div>
     </section>
 
-    <!-- Секция: Контакты -->
-    <section id="contacts" class="section contacts-section">
+
+    <!-- Секция: Контакты (Чистый стиль, без фоновой картинки) -->
+    <section id="contacts" class="section contacts-section fade-in-section">
         <div class="container">
             <h2 class="section-title tech-font">05. УСТАНОВИТЬ СОЕДИНЕНИЕ</h2>
-            
-            <div class="contacts-wrapper scroll-reveal">
-                <!-- ДОБАВЛЕНО: Твоя полная ссылка + безопасность -->
-                <a href="https://www.instagram.com/ibrashko_1?igsh=OHZpb3ptOWtucXNn&utm_source=ig_contact_invite" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="contact-node main-contact">
+           
+            <div class="contacts-wrapper">
+                <a href="https://www.instagram.com/ibrashko_1?igsh=OHZpb3ptOWtucXNn&utm_source=ig_contact_invite"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-node magnetic-btn">
                     <div class="node-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                     </div>
@@ -216,11 +225,20 @@
         </div>
     </section>
 
-    <footer class="site-footer tech-font">
+
+    <!-- Футер -->
+    <footer class="site-footer tech-font fade-in-section">
         <div class="container">
-            <p>СТАТУС СИСТЕМЫ: ОНЛАЙН | © 2026 АГАЙ</p>
+            <p>
+                СТАТУС СИСТЕМЫ:
+                <span class="online-indicator">
+                    <span class="pulse-dot"></span> ОНЛАЙН
+                </span>
+                | © 2026 АГАЙ
+            </p>
         </div>
     </footer>
+
 
     <script src="script.js"></script>
 </body>
